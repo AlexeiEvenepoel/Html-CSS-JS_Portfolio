@@ -8,50 +8,97 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Alexis Omar</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Alexis Omar</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+    <header>
+        <nav id="desktop-nav">
+            <div class="logo">Alexis Omar</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
-                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo-mobile">AO </div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about-me" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
             </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="Alexis Omar profile picture">
-        </div>
-        <div class="section__tex">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="section__text__h1">Alexis Omar</h1>
-            <p class="section__text__p2">Frontend Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
-                    Download CV
+        </nav>
+    </header>
+    <section id="presentation">
+        <div class="container">
+            <div class="text">
+                <h1>Alexis</h1>
+                <h1>Omar.</h1>
+            </div>
+            <p>Front-End Web Developer, passionate about Design UX/UI.</p>
+            <div class="buttons">
+                <button onclick="window.open('./assets/resume-example.pdf')">
+                    <img src="assets/Presentation/download.svg"alt="Icono">Download CV</button>
+                <button onclick="location.href='./#contact'">
+                    <img src="assets/Presentation/contact me.svg"alt="Icono">Contact me
                 </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact me
-                </button>
             </div>
-            
+        </div>
+    </section>
+    <section id="about-me">
+        <div class="cnt">
+            <div class="cnt-text">
+                <h4>Who I'm</h4>
+                <h2>About me</h2>
+            </div>
+            <div class="img-Alexis-Omar">
+                <img src="./assets/profile-pic.png" alt="Alexis Omar profile picture">
+            </div>
+            <p>I love to create websites that provide a unique and satisfying user experience. You can see some of my projects in the portfolio section.
+            I am a self-taught person, responsible and committed to my work, I am constantly learning new technologies and tools to improve my skills. Below, you can see my portfolio and technologies I use.
+            Feel free to contact me if you have any questions.
+            </p>
+        </div>   
+    </section>
+
+    <!-- section#portfolio>.cnt>(.cnt-text>h4+h2)+.cards>.card*3>img+h3+p+(.btn-lng>button*3)+(.btn-links>button*2) -->
+    <section id="portfolio">
+        <div class="cnt">
+            <div class="cnt-text">
+                <h4>Some of my Projects</h4>
+                <h2>Portfolio</h2>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <div class="btn-lng"><button>HTML5</button><button>CSS3</button><button>JAVASCRIPT</button></div>
+                    <div class="btn-links"><button></button><button></button></div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <div class="btn-lng"><button>HTML5</button><button>CSS3</button><button>JAVASCRIPT</button></div>
+                    <div class="btn-links"><button></button><button></button></div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <div class="btn-lng"><button>HTML5</button><button>CSS3</button><button>JAVASCRIPT</button></div>
+                    <div class="btn-links"><button></button><button></button></div>
+                </div>
+            </div>
         </div>
     </section>
     <script src="script.js"></script>

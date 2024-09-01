@@ -6,15 +6,26 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #f4f4f4;
+  background-image: url("assets/background-img.png");
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+h2{
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+  background: linear-gradient(90deg, rgba(255,0,212,1) 0%, rgba(0,212,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 p {
@@ -56,6 +67,7 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181);
 }
 
+
 .logo {
   font-size: 2rem;
   /* font-weight: 600; */
@@ -70,9 +82,18 @@ a:hover {
   display: none;
 }
 
+.logo-mobile {
+  display: flex;
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-right: 40px;
+}
+
 .hamburger-menu {
   position: relative;
   display: inline-block;
+  margin-left: 40px;
+
 }
 
 .hamburger-icon{
@@ -146,3 +167,101 @@ a:hover {
 
 /* Sections */
 
+#presentation{
+  height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+#presentation .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  
+}
+
+#presentation .text h1{
+  display: flex ;
+  align-items: center;
+  font-size: 5rem;
+  font-weight: 600;
+  font-style: italic;
+  background: linear-gradient(90deg, rgba(255,0,212,1) 0%, rgba(0,212,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  height: 75px;
+}
+
+#presentation p{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+}
+
+#presentation .buttons{
+  display: flex;
+  gap: 0.5rem;
+}
+
+button{
+  padding: 8px 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  background-color: #92EEF4;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 0.5rem;
+
+}
+
+button:hover{
+  background: rgb(181, 181, 181);
+}
+
+
+#about-me .cnt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+#about-me .cnt-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about-me h2{
+  font-size: 2.5rem;
+}
+
+#about-me img{
+  height: 35vh;
+}
+
+#about-me .cnt p{
+  font-size: 0,1rem;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+  width: 90vw;
+  
+}
+
+#portfolio .cnt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
