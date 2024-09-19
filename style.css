@@ -287,26 +287,26 @@ button:hover{
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 
-#portfolio p{
-  display: none;
-}
-
-#portfolio .card :nth-child(1){
+#portfolio .card :nth-child(1),
+#portfolio .card :nth-child(2),
+#portfolio .card :nth-child(3){
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: .5rem;
+  gap: 1rem;
   padding: 1rem;
   border-radius: 20px;
   border: 1px solid black;
 }
 
-#portfolio .card :nth-child(1) img {
+#portfolio .card :nth-child(1) img,
+#portfolio .card :nth-child(2) img,
+#portfolio .card :nth-child(3) img{
   object-fit: cover;
   object-position: center;
   width: 100%;
@@ -316,14 +316,17 @@ button:hover{
   border: none;
 }
 
-#portfolio h3{
+#portfolio .card h3{
   font-size: 1.5rem;
   font-weight: bold;
   color: black;
+  border: none !important;
+  border-radius: 0px !important;
+  padding: 0px !important; 
 }
 
-#porrtfolio .card p{
-  display: none;
+#portfolio .card p{
+  display: none !important;
 }
 
 #portfolio .btn-lng {
@@ -340,58 +343,14 @@ button:hover{
   margin: 0px 5px; /* Añade margen entre los botones */
 }
 
-#portfolio .btn-lng button:nth-child(1){
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 10px; 
-  border-radius: 2px; 
-  background-color: #CA472A;
-  font-weight: 600;
-  color: white;
-  font-size: 70%;
-  border-radius: 2px;
-  border: none;
-  padding: 6px 12px;
-}
-
-#portfolio .btn-lng button:nth-child(1) img {
-  padding: 0px;
-  border-radius: 0px;
-  width: 15px;
-  height: 15px;
-}
-
-#portfolio .btn-lng button:nth-child(2){
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 10px; 
-  border-radius: 2px; 
-  background-color: #16669A;
-  font-weight: 600;
-  color: white;
-  font-size: 70%;
-  border-radius: 2px;
-  border: none;
-  padding: 6px 12px;
-
-}
-
-#portfolio .btn-lng button:nth-child(2) img {
-  padding: 0px;
-  border-radius: 0px;
-  width: 15px;
-  height: 15px;
-}
-
+#portfolio .btn-lng button:nth-child(1),
+#portfolio .btn-lng button:nth-child(2),
 #portfolio .btn-lng button:nth-child(3){
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding: 10px; 
   border-radius: 2px; 
-  background-color: #2C2C2D;
   font-weight: 600;
   color: white;
   font-size: 70%;
@@ -399,13 +358,26 @@ button:hover{
   border: none;
   padding: 6px 12px;
 }
+#portfolio .btn-lng button:nth-child(1){
+background-color: #CA472A;
+}
+#portfolio .btn-lng button:nth-child(2){
+background-color: #16669A;
+}
+#portfolio .btn-lng button:nth-child(3){
+background-color: #2C2C2D;
+}
 
-#portfolio .btn-lng button:nth-child(3) img {
+#portfolio .btn-lng button:nth-child(1) img,
+#portfolio .btn-lng button:nth-child(2) img,
+#portfolio .btn-lng button:nth-child(3) img{
   padding: 0px;
   border-radius: 0px;
   width: 15px;
   height: 15px;
 }
+
+/* btn-links */
 
 #portfolio .btn-links{
   display: flex;
@@ -415,28 +387,25 @@ button:hover{
   border: none;
 }
 
-#portfolio .btn-links button:nth-child(1){
+#portfolio .btn-links button:nth-child(1),
+#portfolio .btn-links button:nth-child(2)
+{
   padding: 0;
   border: 0px;
   border-radius: 0px;
   background-color: transparent;
 }
+
 #portfolio .btn-links button:nth-child(1) img {
   height: 35px;
 }
 
-#portfolio .btn-links button:nth-child(2){
-  padding: 0;
-  border: 0px;
-  border-radius: 0px;
-  background-color: transparent;
-}
 #portfolio .btn-links button:nth-child(2) img {
   height: 50px;
 }
 
 
-#portfolio .card :nth-child(2) img {
+#portfolio img {
   object-fit: cover;
   object-position: center;
   width: 100%;
@@ -445,7 +414,7 @@ button:hover{
   padding: 0;
   border: none;
 }
-#portfolio .card :nth-child(3) img {
+#portfolio img {
   object-fit: cover;
   object-position: center;
   width: 100%;
