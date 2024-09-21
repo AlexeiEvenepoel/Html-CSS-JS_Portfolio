@@ -1,317 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
     <header>
-        <nav id="desktop-nav">
-            <div class="logo">Alexis Omar</div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="#about-me">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact-me">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <nav id="hamburger-nav">
-            <div class="logo-mobile">AO </div>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li><a href="#about-me" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
-                    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                    <li><a href="#contact-me" onclick="toggleMenu()">Contact</a></li>
-                </div>
-            </div>
-        </nav>
+      <nav id="desktop-nav">
+        <div class="logo">Alexis Omar</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact-me">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo-mobile">AO</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about-me" onclick="toggleMenu()">About</a></li>
+            <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#contact-me" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
     </header>
     <section id="presentation">
-        <div class="container">
-            <div class="text">
-                <h1>Alexis</h1>
-                <h1>Omar.</h1>
-            </div>
-            <p>Front-End Web Developer, passionate about Design UX/UI.</p>
-            <div class="buttons">
-                <button onclick="window.open('./assets/resume-example.pdf')">
-                    <img src="assets/Presentation/download.svg"alt="Icono">Download CV
-                </button>
-                <button onclick="location.href='./#contact'">
-                    <img src="assets/Presentation/contact me.svg"alt="Icono">Contact me
-                </button>
-            </div>
+      <div class="container">
+        <div class="text">
+          <h1>Alexis<br />Omar.</h1>
         </div>
+        <p>Front-End Web Developer, passionate about Design UX.</p>
+        <div class="buttons">
+          <button onclick="window.open('./assets/resume-example.pdf')">
+            <img src="assets/Presentation/download.svg" alt="Icono" />Download
+            CV
+          </button>
+          <button onclick="location.href='#contact-me'">
+            <img src="assets/Presentation/contact me.svg" alt="Icono" />Contact
+            me
+          </button>
+        </div>
+      </div>
     </section>
     <section id="about-me">
-        <div class="cnt">
-            <div class="cnt-text">
-                <h4>Who I'm</h4>
-                <h2>About me</h2>
-            </div>
-            <div class="img-Alexis-Omar">
-                <img src="./assets/profile-pic.png" alt="Alexis Omar profile picture">
-            </div>
-            <p>I love to create websites that provide a unique and satisfying user experience. You can see some of my projects in the portfolio section.
-            I am a self-taught person, responsible and committed to my work, I am constantly learning new technologies and tools to improve my skills. Below, you can see my portfolio and technologies I use.
-            Feel free to contact me if you have any questions.
-            </p>
-        </div>   
+      <div class="cnt">
+        <div class="cnt-text">
+          <h4>Who I'm</h4>
+          <h2>About me</h2>
+        </div>
+        <div class="img-Alexis-Omar">
+          <img
+            src="./assets/profile-pic.png"
+            alt="Alexis Omar profile picture"
+          />
+        </div>
+        <p>
+          I love to create websites that provide a unique and satisfying user
+          experience. You can see some of my projects in the portfolio section.
+          I am a self-taught person, responsible and committed to my work, I am
+          constantly learning new technologies and tools to improve my skills.
+          Below, you can see my portfolio and technologies I use. Feel free to
+          contact me if you have any questions.
+        </p>
+        <ul>
+          <li><svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+            
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+            
+            <g id="SVGRepo_iconCarrier"> <path d="M20 12.05C19.9813 10.5255 19.5273 9.03809 18.6915 7.76295C17.8557 6.48781 16.673 5.47804 15.2826 4.85257C13.8921 4.2271 12.3519 4.01198 10.8433 4.23253C9.33473 4.45309 7.92057 5.10013 6.7674 6.09748C5.61422 7.09482 4.77005 8.40092 4.3343 9.86195C3.89856 11.323 3.88938 12.8781 4.30786 14.3442C4.72634 15.8103 5.55504 17.1262 6.69637 18.1371C7.83769 19.148 9.24412 19.8117 10.75 20.05V14.38H8.75001V12.05H10.75V10.28C10.7037 9.86846 10.7483 9.45175 10.8807 9.05931C11.0131 8.66687 11.23 8.30827 11.5161 8.00882C11.8022 7.70936 12.1505 7.47635 12.5365 7.32624C12.9225 7.17612 13.3368 7.11255 13.75 7.14003C14.3498 7.14824 14.9482 7.20173 15.54 7.30003V9.30003H14.54C14.3676 9.27828 14.1924 9.29556 14.0276 9.35059C13.8627 9.40562 13.7123 9.49699 13.5875 9.61795C13.4627 9.73891 13.3667 9.88637 13.3066 10.0494C13.2464 10.2125 13.2237 10.387 13.24 10.56V12.07H15.46L15.1 14.4H13.25V20C15.1399 19.7011 16.8601 18.7347 18.0985 17.2761C19.3369 15.8175 20.0115 13.9634 20 12.05Z"/> </g>
+            </svg></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
     </section>
 
     <!-- section#portfolio>.cnt>(.cnt-text>h4+h2)+.cards>.card*3>img+h3+p+(.btn-lng>button*3)+(.btn-links>button*2) -->
     <section id="portfolio">
-        <div class="cnt">
-            <div class="cnt-text">
-                <h4>Some of my Projects</h4>
-                <h2>Portfolio</h2>
-            </div>
-            <div class="card">
-                <div>
-                    <img src="assets/project-1.png" alt="">
-                    <h3>Web Site"San Pedro de Yauyo"</h3>
-                    <p></p>
-                    <div class="btn-lng">
-                        <button>
-                            <img src="assets/Portfolio/html logo.svg" alt="HTML5 Icon">
-                            HTML5
-                        </button>
-                        <button>
-                            <img src="assets/Portfolio/css logo.svg" alt="CSS3 Icon">
-                            CSS3
-                        </button>
-                        <button>
-                            <img src="assets/Portfolio/js logo.svg" alt="JavaScript Icon">
-                            JS
-                        </button>
-                    </div>
-                    <div class="btn-links">
-                        <button>
-                            <img src="assets/Portfolio/github logo.svg" alt="GitHub Icon">
-                        </button>
-                        <button>
-                            <img src="assets/Portfolio/linkedin logo.svg" alt="GitHub Icon">
-                        </button>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="assets/project-2.png" alt="">
-                    <h3>Mobile App "EventMatch"</h3>
-                    <p></p>
-                    <div class="btn-lng">
-                        <button>
-                            <img src="assets/Portfolio/html logo.svg" alt="HTML5 Icon">
-                            HTML5
-                        </button>
-                        <button>
-                            <img src="assets/Portfolio/css logo.svg" alt="CSS3 Icon">
-                            CSS3
-                        </button>
-                        <button>
-                            <img src="assets/Portfolio/js logo.svg" alt="JavaScript Icon">
-                            JS
-                        </button>
-                    </div>
-                    <div class="btn-links">
-                        <button>
-                            <img src="assets/Portfolio/github logo.svg" alt="GitHub Icon">
-                        </button>
-                        <button>
-                            <img src="assets/Portfolio/linkedin logo.svg" alt="GitHub Icon">
-                        </button>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="assets/project-3.png" alt="">
-                    <h3>Web Site "Project Zomboid"</h3>
-                    <p></p>
-                    <div class="btn-lng">
-                        <button>
-                            <img src="assets/Portfolio/html logo.svg" alt="HTML5 Icon">
-                            HTML5
-                        </button>
-                        <button>
-                            <img src="assets/Portfolio/css logo.svg" alt="CSS3 Icon">
-                            CSS3
-                        </button>
-                        <button>
-                            <img src="assets/Portfolio/js logo.svg" alt="JavaScript Icon">
-                            JS
-                        </button>
-                    </div>
-                    <div class="btn-links">
-                        <button>
-                            <img src="assets/Portfolio/github logo.svg" alt="GitHub Icon">
-                        </button>
-                        <button>
-                            <img src="assets/Portfolio/linkedin logo.svg" alt="GitHub Icon">
-                        </button>
-                    </div>
-                </div>
-            </div>
+      <div class="cnt">
+        <div class="cnt-text">
+          <h4>Some of my Projects</h4>
+          <h2>Portfolio</h2>
         </div>
+        <div class="card">
+          <div>
+            <img src="assets/project-1.png" alt="" />
+            <h3>Web Site<br />"San Pedro de Yauyo"</h3>
+            <p></p>
+            <div class="btn-lng">
+              <button>
+                <img src="assets/Portfolio/html logo.svg" alt="HTML5 Icon" />
+                HTML5
+              </button>
+              <button>
+                <img src="assets/Portfolio/css logo.svg" alt="CSS3 Icon" />
+                CSS3
+              </button>
+              <button>
+                <img src="assets/Portfolio/js logo.svg" alt="JavaScript Icon" />
+                JS
+              </button>
+            </div>
+            <div class="btn-links">
+              <button>
+                <img src="assets/Portfolio/github logo.svg" alt="GitHub Icon" />
+              </button>
+              <button>
+                <img src="assets/Portfolio/link.svg" alt="GitHub Icon" />
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <img src="assets/project-2.png" alt="" />
+            <h3>Web Site <br />"Sales System"</h3>
+            <p></p>
+            <div class="btn-lng">
+              <button>
+                <img src="assets/Portfolio/html logo.svg" alt="HTML5 Icon" />
+                HTML5
+              </button>
+              <button>
+                <img src="assets/Portfolio/css logo.svg" alt="CSS3 Icon" />
+                CSS3
+              </button>
+              <button>
+                <img src="assets/Portfolio/js logo.svg" alt="JavaScript Icon" />
+                JS
+              </button>
+            </div>
+            <div class="btn-links">
+              <button>
+                <img src="assets/Portfolio/github logo.svg" alt="GitHub Icon" />
+              </button>
+              <button>
+                <img src="assets/Portfolio/link.svg" alt="GitHub Icon" />
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <img src="assets/project-3.png" alt="" />
+            <h3>
+              Web Site<br />
+              "Project Zomboid"
+            </h3>
+            <p></p>
+            <div class="btn-lng">
+              <button>
+                <img src="assets/Portfolio/html logo.svg" alt="HTML5 Icon" />
+                HTML5
+              </button>
+              <button>
+                <img src="assets/Portfolio/css logo.svg" alt="CSS3 Icon" />
+                CSS3
+              </button>
+              <button>
+                <img src="assets/Portfolio/js logo.svg" alt="JavaScript Icon" />
+                JS
+              </button>
+            </div>
+            <div class="btn-links">
+              <button>
+                <img src="assets/Portfolio/github logo.svg" alt="GitHub Icon" />
+              </button>
+              <button>
+                <img src="assets/Portfolio/link.svg" alt="GitHub Icon" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- section#skills>.cnt>(.txt>h2)+(.card>div*4>(div>h4)+(div>img)+(.btn-lng>button*2)) -->
     <section id="skills">
-        <div class="cnt">
-            <div class="txt">
-                <h2>Skills</h2>
+      <div class="cnt">
+        <div class="txt">
+          <h2>Skills</h2>
+        </div>
+        <div class="card-cnt">
+          <div class="card">
+            <div>
+              <h3>Front-End</h3>
             </div>
-            <div class="card-cnt">
-                <div class="card">
-                    <div>
-                        <h3>Front-End</h3>
-                    </div>
-                    <div class="icon"><img src="assets/Skills/front-end.svg" alt="">
-                    </div>
-                    <div class="btn-lng"><button>
-                        <img src="assets/Portfolio/html logo.svg" alt="HTML5 Icon">
-                        HTML5
-                        </button>
-                        <button>
-                        <img src="assets/Portfolio/css logo.svg" alt="CSS3 Icon">
-                        CSS3
-                        </button></div>
-                </div>
-                <div class="card">
-                    <div>
-                        <h3>Design UX</h3>
-                    </div>
-                    <div class="icon"><img src="assets/Skills/design.svg" alt="">
-                    </div>
-                    <div class="btn-lng">
-                        <button>
-                            <img class="figma"  src="assets/Portfolio/figma logo.svg" alt="HTML5 Icon">
-                            Figma
-                        </button>
-                        <!-- <button>
+            <div class="icon">
+              <img src="assets/Skills/front-end.svg" alt="" />
+            </div>
+            <div class="btn-lng">
+              <button>
+                <img src="assets/Portfolio/html logo.svg" alt="HTML5 Icon" />
+                HTML5
+              </button>
+              <button>
+                <img src="assets/Portfolio/css logo.svg" alt="CSS3 Icon" />
+                CSS3
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <h3>Design UX</h3>
+            </div>
+            <div class="icon">
+              <img src="assets/Skills/design.svg" alt="" />
+            </div>
+            <div class="btn-lng">
+              <button>
+                <img
+                  class="figma"
+                  src="assets/Portfolio/figma logo.svg"
+                  alt="HTML5 Icon"
+                />
+                Figma
+              </button>
+              <!-- <button>
                             <img src="assets/Portfolio/css logo.svg" alt="CSS3 Icon">
                             CSS3
                         </button> -->
-                    </div>
-                </div>
-                <div class="card">
-                    <div>
-                        <h3>Learning</h3>
-                    </div>
-                    <div class="icon"><img src="assets/Skills/learning.svg" alt="">
-                    </div>
-                    <div class="btn-lng"><button>
-                        <img src="assets/Portfolio/js logo.svg" alt="HTML5 Icon">
-                        Java Script
-                        </button>
-                        <button>
-                        <img src="assets/Portfolio/wp logo.svg" alt="CSS3 Icon">
-                        WordPress
-                        </button></div>
-                </div>
-                <div class="card">
-                    <div>
-                        <h3>Tools</h3>
-                    </div>
-                    <div class="icon"><img src="assets/Skills/tools.svg" alt="">
-                    </div>
-                    <div class="btn-lng">
-                        <button>
-                        <img src="assets/Portfolio/vsc logo.svg" alt="HTML5 Icon">
-                        Visual Studio Code
-                        </button>
-                        <!-- <button>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <h3>Learning</h3>
+            </div>
+            <div class="icon">
+              <img src="assets/Skills/learning.svg" alt="" />
+            </div>
+            <div class="btn-lng">
+              <button>
+                <img src="assets/Portfolio/js logo.svg" alt="HTML5 Icon" />
+                Java Script
+              </button>
+              <button>
+                <img src="assets/Portfolio/wp logo.svg" alt="CSS3 Icon" />
+                WordPress
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <h3>Tools</h3>
+            </div>
+            <div class="icon"><img src="assets/Skills/tools.svg" alt="" /></div>
+            <div class="btn-lng">
+              <button>
+                <img src="assets/Portfolio/vsc logo.svg" alt="HTML5 Icon" />
+                Visual Studio Code
+              </button>
+              <!-- <button>
                         <img src="assets/Portfolio/css logo.svg" alt="CSS3 Icon">
                         CSS3
                         </button> -->
-                    </div>
-                </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- section#.contact-me>.cnt>(contact-me>h4+h2+p+(.item-info>img+p)*3)+(form>input.name+input.email+input.subject+input.msg+(button>img))    -->
-     <section id="contact-me">
-        <div class="cnt">
-            <div class="info">
-                <div class="txt">
-                    <h4>It's now or never</h4>
-                    <h2>Contact me</h2>
-                    <p class="info-txt">If you have any questions and/or would like me to be part of your team, you can fill out the form or contact me through these means:</p>
-                </div>
-                <div class="item">
-                    <div class="item-info">
-                        <img src="assets/Contact/email.svg" alt="">
-                        <p>e_2019200797H@uncp.edu.pe</p>
-                    </div>
-                    <div class="item-info">
-                        <img src="assets/Contact/phone.svg" alt="">
-                        <p>+51 924 000 358</p>
-                    </div>
-                    <div class="item-info">
-                        <img src="assets/Contact/location.svg" alt="">
-                        <p>Huancayo, Perú</p>
-                    </div>
-                </div>
+    <section id="contact-me">
+      <div class="cnt">
+        <div class="info">
+          <div class="txt">
+            <h4>It's now or never</h4>
+            <h2>Contact me</h2>
+            <p class="info-txt">
+              If you have any questions and/or would like me to be part of your
+              team, you can fill out the form or contact me through these means:
+            </p>
+          </div>
+          <div class="item">
+            <div class="item-info">
+              <img src="assets/Contact/email.svg" alt="" />
+              <p>e_2019200797H@uncp.edu.pe</p>
             </div>
-            <form action="https://formsubmit.co/alexisomar136@gmail.com" method="POST">
-                <div class="input-group">
-                    <input type="text"  name="name" id="name" placeholder="Name">
-                    <input type="text"  name="email" id="email" placeholder="Email">
-                    <input type="text"  name="subject" id="subject" placeholder="Subject">
-                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"></textarea>
-                    <button class="btn" type="submit">
-                        <img src="assets/Presentation/contact me.svg" alt="Send Icon">
-                        Send
-                    </button>
+            <div class="item-info">
+              <img src="assets/Contact/phone.svg" alt="" />
+              <p>+51 924 000 358</p>
+            </div>
+            <div class="item-info">
+              <img src="assets/Contact/location.svg" alt="" />
+              <p>Huancayo, Perú</p>
+            </div>
+          </div>
+        </div>
+        <form
+          action="https://formsubmit.co/alexisomar136@gmail.com"
+          method="POST"
+        >
+          <div class="input-group">
+            <input type="text" name="name" id="name" placeholder="Name" />
+            <input type="text" name="email" id="email" placeholder="Email" />
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Subject"
+            />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="5"
+              placeholder="Message"
+            ></textarea>
+            <button class="btn" type="submit" value="Submit">
+              <img src="assets/Presentation/contact me.svg" alt="Send Icon" />
+              Send
+            </button>
 
-                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
-                    <input type="hidden" name="_captcha" value="false">
-                </div>
-            </form>
+            <input
+              type="hidden"
+              name="_next"
+              value="http://127.0.0.1:5500/#contact-me"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- section#finaltxt>cnt>h4+button{Contact me}+p+.btn-sn>button*3>img -->
+    <section id="finaltxt">
+      <div class="cnt">
+        <h4>Thank you for visiting my web site🤟</h4>
+        <button>
+          Contact me
+          <img src="assets/Presentation/contact me.svg" alt="Send Icon" />
+        </button>
+        <p>Or you can also contact me through:</p>
+        <div class="btn-sn">
+          <button><img src="assets/Final/linkedin logo.svg" alt="" /></button>
+          <button><img src="assets/Final/github logo.svg" alt="" /></button>
+          <button><img src="assets/Final/facebook logo.svg" /></button>
         </div>
-     </section>
-     <!-- section#finaltxt>cnt>h4+button{Contact me}+p+.btn-sn>button*3>img -->
-     <section id="finaltxt">
-        <div class="cnt">
-            <h4>Thank you for visiting my web site🤟</h4>
-            <button>Contact me
-                <img src="assets/Presentation/contact me.svg" alt="Send Icon"></button>
-            <p>Or you can also contact me through:</p>
-            <div class="btn-sn">
-                <button><img src="assets/Final/linkedin logo.svg" alt=""></button>
-                <button><img src="assets/Final/github logo.svg" alt=""></button>
-                <button><img src="assets/Final/facebook logo.svg"></button>
-            </div>
-        </div>
-     </section>
+      </div>
+    </section>
     <footer>
-        <div class="footer-content">
-            <h2>Alexis Omar</h2>
-            <p>The key to success is consistency in training and preparation, and confidence in your abilities.<br><br>-Eddy Merckx-<br></p>
-            <ul class="social-links">
-                <li><a href="https://www.linkedin.com/in/alexisomar" target="_blank"><img src="assets/Final/linkedin logo.svg" alt="LinkedIn"></a></li>
-                <li><a href="https://github.com/alexisomar" target="_blank"><img src="assets/Final/github logo.svg" alt="GitHub"></a></li>
-                <li><a href="https://www.facebook.com/alexisomar" target="_blank"><img src="assets/Final/facebook logo.svg" alt="Facebook"></a></li>
-            </ul>
-            <div class="nav-footer">
-                <ul>
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact-me">Contact Me</a></li>
-                </ul>
-            </div>
+      <div class="cnt">
+        <div class="txt">
+          <h2>Alexis Omar</h2>
+          <p>
+            The key to success is consistency in training and preparation, and
+            confidence in your habilities.<br /><br />-Eddy Merckx-<br />
+          </p>
         </div>
+        <ul class="sn">
+          <li>
+            <a href="https://www.linkedin.com/in/alexisomar" target="_blank"
+              ><img src="assets/Final/linkedin logo.svg" alt="LinkedIn"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/alexisomar" target="_blank"
+              ><img src="assets/Final/github logo.svg" alt="GitHub"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/alexisomar" target="_blank"
+              ><img src="assets/Final/facebook logo.svg" alt="Facebook"
+            /></a>
+          </li>
+        </ul>
+        <div class="nav-footer">
+          <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+          </ul>
+        </div>
+        <div class="rights">
+          <p>© 2024 All rights reserved.</p>
+        </div>
+      </div>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
