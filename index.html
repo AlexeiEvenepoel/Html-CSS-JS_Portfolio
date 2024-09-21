@@ -16,7 +16,7 @@
                     <li><a href="#about-me">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact-me">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -32,7 +32,7 @@
                     <li><a href="#about-me" onclick="toggleMenu()">About</a></li>
                     <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
                     <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                    <li><a href="#contact-me" onclick="toggleMenu()">Contact</a></li>
                 </div>
             </div>
         </nav>
@@ -238,7 +238,80 @@
             </div>
         </div>
     </section>
-    section#cnt>(contact-me>h4+h2+p+((div>(img+p))*3))+(form>input.name+)   
+    <!-- section#.contact-me>.cnt>(contact-me>h4+h2+p+(.item-info>img+p)*3)+(form>input.name+input.email+input.subject+input.msg+(button>img))    -->
+     <section id="contact-me">
+        <div class="cnt">
+            <div class="info">
+                <div class="txt">
+                    <h4>It's now or never</h4>
+                    <h2>Contact me</h2>
+                    <p class="info-txt">If you have any questions and/or would like me to be part of your team, you can fill out the form or contact me through these means:</p>
+                </div>
+                <div class="item">
+                    <div class="item-info">
+                        <img src="assets/Contact/email.svg" alt="">
+                        <p>e_2019200797H@uncp.edu.pe</p>
+                    </div>
+                    <div class="item-info">
+                        <img src="assets/Contact/phone.svg" alt="">
+                        <p>+51 924 000 358</p>
+                    </div>
+                    <div class="item-info">
+                        <img src="assets/Contact/location.svg" alt="">
+                        <p>Huancayo, Perú</p>
+                    </div>
+                </div>
+            </div>
+            <form action="https://formsubmit.co/alexisomar136@gmail.com" method="POST">
+                <div class="input-group">
+                    <input type="text"  name="name" id="name" placeholder="Name">
+                    <input type="text"  name="email" id="email" placeholder="Email">
+                    <input type="text"  name="subject" id="subject" placeholder="Subject">
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+                    <button class="btn" type="submit">
+                        <img src="assets/Presentation/contact me.svg" alt="Send Icon">
+                        Send
+                    </button>
+
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                    <input type="hidden" name="_captcha" value="false">
+                </div>
+            </form>
+        </div>
+     </section>
+     <!-- section#finaltxt>cnt>h4+button{Contact me}+p+.btn-sn>button*3>img -->
+     <section id="finaltxt">
+        <div class="cnt">
+            <h4>Thank you for visiting my web site🤟</h4>
+            <button>Contact me
+                <img src="assets/Presentation/contact me.svg" alt="Send Icon"></button>
+            <p>Or you can also contact me through:</p>
+            <div class="btn-sn">
+                <button><img src="assets/Final/linkedin logo.svg" alt=""></button>
+                <button><img src="assets/Final/github logo.svg" alt=""></button>
+                <button><img src="assets/Final/facebook logo.svg"></button>
+            </div>
+        </div>
+     </section>
+    <footer>
+        <div class="footer-content">
+            <h2>Alexis Omar</h2>
+            <p>The key to success is consistency in training and preparation, and confidence in your abilities.<br><br>-Eddy Merckx-<br></p>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/alexisomar" target="_blank"><img src="assets/Final/linkedin logo.svg" alt="LinkedIn"></a></li>
+                <li><a href="https://github.com/alexisomar" target="_blank"><img src="assets/Final/github logo.svg" alt="GitHub"></a></li>
+                <li><a href="https://www.facebook.com/alexisomar" target="_blank"><img src="assets/Final/facebook logo.svg" alt="Facebook"></a></li>
+            </ul>
+            <div class="nav-footer">
+                <ul>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
