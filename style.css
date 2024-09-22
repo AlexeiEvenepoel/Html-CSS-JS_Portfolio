@@ -82,6 +82,10 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181);
 }
 
+ul {
+  list-style: none;
+}
+
 button {
   display: flex;
   justify-content: center;
@@ -105,6 +109,8 @@ button:hover {
 
 #hamburger-nav {
   display: none;
+  justify-content: flex-end;
+  height: 10vh;
 }
 
 .logo-mobile {
@@ -112,12 +118,13 @@ button:hover {
   font-size: 2.4rem;
   font-weight: 400;
   margin-right: 40px;
+  display: none;
 }
 
 .hamburger-menu {
   position: relative;
   display: inline-block;
-  margin-left: 40px;
+  left: -40px;
 }
 
 .hamburger-icon {
@@ -195,8 +202,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 6rem;
-  margin-bottom: 4rem;
+  height: 666px;
 }
 
 #presentation .container {
@@ -299,10 +305,61 @@ button:hover {
 
 #about-me img {
   height: 35vh;
+  padding-top: 1.5rem;
 }
 
-#about-me svg path{
+#about-me .txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+#about-me p {
+  color: var(--Color-5, #000);
+  text-align: justify;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+#about-me p span:nth-child(1),
+#about-me p span:last-child {
+  font-style: italic;
+  font-weight: 900;
+  color: #8941e8;
+  cursor: pointer;
+}
+
+#about-me a {
+  color: var(--Color-5, #8941e8);
+  text-decoration: none;
+}
+
+#about-me p span:nth-child(1):hover,
+#about-me p span:last-child:hover {
+  cursor: pointer;
+}
+
+#about-me svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+#about-me .gh {
+  width: 2rem;
+  height: 2rem;
+}
+
+#about-me svg path {
   fill: black;
+}
+
+#about-me svg:hover path {
+  fill: #d2355f;
 }
 
 #about-me .cnt p {
@@ -311,6 +368,14 @@ button:hover {
   color: black;
   text-align: center;
   width: 90vw;
+}
+
+#about-me ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 #portfolio .cnt {
@@ -332,7 +397,7 @@ button:hover {
   width: 90vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   gap: 2.5rem;
 }
@@ -345,8 +410,8 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
   padding: 1rem;
+  gap: 1rem;
   border-radius: 20px;
   border: 1px solid black;
 }
@@ -354,11 +419,12 @@ button:hover {
 #portfolio .card :nth-child(1) img,
 #portfolio .card :nth-child(2) img,
 #portfolio .card :nth-child(3) img {
+  display: flex;
   object-fit: cover;
   object-position: center;
   width: 100%;
-  height: 50vh;
-  border-radius: 20px;
+  height: 40vh;
+  border-radius: 10px;
   padding: 0;
   border: none;
 }
@@ -424,40 +490,41 @@ button:hover {
   height: 15px;
 }
 
-/* btn-links */
+/* icon-link */
 
-#portfolio .btn-links {
+#portfolio .icon-link {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   border: none;
+  margin-bottom: 1rem;
 }
 
-#portfolio .btn-links button:nth-child(1),
-#portfolio .btn-links button:nth-child(2) {
-  padding: 0;
-  border: 0px;
-  border-radius: 0px;
-  background-color: transparent;
-}
-
-#portfolio .btn-links button:nth-child(1) img {
-  height: 35px;
-}
-
-#portfolio .btn-links button:nth-child(2) img {
-  height: 35px;
-}
-
-#portfolio img {
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
-  height: 40vh;
-  border-radius: 20px;
-  padding: 0;
+#portfolio .icon-link .link {
   border: none;
+  transform: rotate(-45deg);
+}
+#portfolio .icon-link .gh {
+  border: none;
+}
+
+#portfolio .icon-link svg {
+  padding: 0px !important;
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: black;
+}
+
+#portfolio .icon-link svg:hover path {
+  fill: #d2355f;
+}
+
+#portfolio a {
+  padding: 0rem !important;
+  gap: 0rem !important;
+  border-radius: 0px !important;
+  border: none !important;
 }
 
 /* Skills */
@@ -808,6 +875,10 @@ footer .nav-footer li:nth-child(2) a,
 footer .nav-footer li:nth-child(3) a,
 footer .nav-footer li:nth-child(4) a {
   font-size: 0.8rem;
+}
+
+footer .nav-footer li:nth-child(4){
+  border: none;
 }
 
 footer .nav-footer li {
