@@ -110,7 +110,7 @@ button:hover {
 #hamburger-nav {
   display: none;
   justify-content: flex-end;
-  height: 10vh;
+  height: 74px;
 }
 
 .logo-mobile {
