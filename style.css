@@ -169,7 +169,7 @@ button:hover {
 }
 
 .menu-links.open {
-  max-height: 300px;
+  max-height: 360px;
 }
 
 .hamburger-icon.open span:first-child {
@@ -400,10 +400,6 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-#about-me h2 {
-  font-size: 2.5rem;
 }
 
 #about-me img {
@@ -817,6 +813,7 @@ ul {
   background: rgba(223, 198, 255, 0.8);
   border: none;
   border-radius: 0.6875rem;
+  resize: none;
   /* tipografia */
   font-family: Inter;
   font-style: normal;
@@ -883,6 +880,7 @@ ul {
   gap: 0.75rem;
 }
 #finaltxt .btn-sn button {
+  display: none;
   background-color: transparent;
   border: none;
   border-radius: 0px;
@@ -1043,15 +1041,10 @@ footer .rights p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  /* h2 {
-    text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  h2 {
     font-size: 3rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 2.4px;
-  } */
+  }
 
   /* Presentation */
   #presentation .container {
@@ -1128,42 +1121,59 @@ footer .rights p {
   }
 
   /* Portfolio */
+  #portfolio {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   #portfolio .card {
     flex-direction: row;
   }
 
   /* Skills */
 
+  #skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   #skills .cnt {
-    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 1240px;
   }
 
   #skills .card-cnt {
     display: grid;
-    grid-template-columns: repeat(2, 500px);
-    grid-template-rows: repeat(2, 300px);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-template-columns: repeat(2, 602px);
+    grid-template-rows: repeat(2, 360px);
+    grid-column-gap: 34px;
+    grid-row-gap: 34px;
   }
   #skills .card:nth-child(1) {
     grid-area: 1 / 1 / 2 / 2;
-    width: 500px;
-    height: 300px;
+    width: 602px;
+    height: 360px;
   }
   #skills .card:nth-child(2) {
     grid-area: 1 / 2 / 2 / 3;
-    width: 500px;
-    height: 300px;
+    width: 602px;
+    height: 360px;
   }
   #skills .card:nth-child(3) {
     grid-area: 2 / 1 / 3 / 2;
-    width: 500px;
-    height: 300px;
+    width: 602px;
+    height: 360px;
   }
   #skills .card:nth-child(4) {
     grid-area: 2 / 2 / 3 / 3;
-    width: 500px;
-    height: 300px;
+    width: 602px;
+    height: 360px;
   }
 
   #skills h3 {
@@ -1212,29 +1222,126 @@ footer .rights p {
     overflow: hidden;
   }
 
-  /* #skills .card:hover::before {
-    transform: scaleX(1);
-  }
-
-  #skills .card-content {
-    position: relative;
-    z-index: 1;
-  } */
-
   #skills .card::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    transform: scaleX(0);
-    transform-origin: 0 50%;
-    width: 100%;
+    width: 0;
     height: 100%;
     background: linear-gradient(
       82.3deg,
-      rgba(150, 93, 233, 1) 10.8%,
-      rgba(99, 88, 238, 1) 94.3%
+      rgba(149, 93, 233, 0.4) 10.8%,
+      rgba(99, 88, 238, 0.4) 94.3%
     );
     z-index: -1;
+    transition: 1s;
   }
+  #skills .card:hover::before {
+    width: 100%;
+  }
+  /* Contact me */
+  #contact-me .cnt {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 316px;
+    width: 1240px;
+    padding: 0;
+  }
+
+  #contact-me .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    width: 544px;
+    height: 316px;
+  }
+
+  #contact-me .txt {
+    text-align: left;
+  }
+
+  #contact-me .info-txt {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  #contact-me .item-info:nth-child(1),
+  #contact-me .item-info:nth-child(2),
+  #contact-me .item-info:nth-child(3) {
+    display: flex;
+    padding: 10px 16px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.625rem;
+  }
+
+  /* Form */
+
+  #contact-me .input-group {
+    width: 39rem;
+  }
+
+  #contact-me form .input-group input {
+    width: 100%;
+  }
+
+  #contact-me .input-group textarea {
+    height: 174px;
+  }
+
+  /* Final Text */
+
+  #finaltxt {
+    margin: 4rem 0;
+  }
+
+  #finaltxt button {
+    padding: 1rem 1.5rem;
+  }
+
+  #finaltxt .btn-sn button {
+    display: block;
+    
+  }
+
+#finaltxt p span:nth-child(1),
+#finaltxt p span:last-child {
+  font-style: italic;
+  font-weight: 900;
+  color: #8941e8;
+  cursor: pointer;
+}
+
+#finaltxt a {
+  color: var(--Color-5, #8941e8);
+  text-decoration: none;
+}
+
+#finaltxt p span:nth-child(1):hover,
+#finaltxt p span:last-child:hover {
+  cursor: pointer;
+}
+
+#finaltxt svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+#finaltxt .gh {
+  width: 2rem;
+  height: 2rem;
+}
+
+#finaltxt svg path {
+  fill: black;
+}
+
+#finaltxt svg:hover path {
+  fill: #d2355f;
+}
 }
