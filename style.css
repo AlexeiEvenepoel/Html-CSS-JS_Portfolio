@@ -49,9 +49,14 @@ p {
 
 /* Transition */
 
-a,
-btn {
-  transform: all 300ms ease;
+a{
+  transition: all 300ms ease;
+}
+button{
+  transition: all 300ms ease;
+  &:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 }
 
 /* Desktop nav */
@@ -950,12 +955,17 @@ footer .sn img {
   height: 2rem;
 }
 
+footer ul {
+  display: none;
+}
+
 footer .nav-footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 0.875rem;
+  margin-top: 1rem;
 }
 
 footer .nav-footer ul {
@@ -1306,42 +1316,96 @@ footer .rights p {
 
   #finaltxt .btn-sn button {
     display: block;
-    
   }
 
-#finaltxt p span:nth-child(1),
-#finaltxt p span:last-child {
-  font-style: italic;
-  font-weight: 900;
-  color: #8941e8;
-  cursor: pointer;
-}
+  /* footer */
 
-#finaltxt a {
-  color: var(--Color-5, #8941e8);
-  text-decoration: none;
-}
+  footer {
+    width: 100%;
+    & .cnt {
+      width: 38.3125rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-#finaltxt p span:nth-child(1):hover,
-#finaltxt p span:last-child:hover {
-  cursor: pointer;
-}
+      & .txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 33.9375rem;
+        gap: 1rem;
+        & p {
+          display: block;
+          width: 33.9375rem;
+          height: 5rem;
+        }
+      }
 
-#finaltxt svg {
-  width: 2.5rem;
-  height: 2.5rem;
-}
+      & ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3.9rem;
+        margin-top: 1.5rem;
 
-#finaltxt .gh {
-  width: 2rem;
-  height: 2rem;
-}
+        & svg {
+          width: 2.5rem;
+          height: 2.5rem;
+          & path {
+            fill: white;
 
-#finaltxt svg path {
-  fill: black;
-}
+            &:hover {
+              fill: #8941e8;
+            }
+          }
+          & :hover path {
+            fill: #8941e8;
+          }
+        }
 
-#finaltxt svg:hover path {
-  fill: #d2355f;
-}
+        & .gh {
+          width: 2rem;
+          height: 2rem;
+
+          & :hover path {
+            fill: #8941e8;
+          }
+        }
+      }
+
+      & .nav-footer {
+        width: 100%;
+        margin-top: 1.5rem;
+        & li:nth-child(1) a,
+        & li:nth-child(2) a,
+        & li:nth-child(3) a,
+        & li:nth-child(4) a {
+          font-size: 1.25rem;
+        }
+
+        & .item-nav {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0 !important;
+          margin-top: 0 !important;
+          & a{
+            transition: all 300ms ease;
+            &:hover {
+              text-decoration: none;
+              color: #0c9ba5;
+            }
+          }
+        }
+      }
+
+      & .rights {
+        padding: 0;
+        margin-top: 1.6rem;
+      }
+    }
+  }
 }
