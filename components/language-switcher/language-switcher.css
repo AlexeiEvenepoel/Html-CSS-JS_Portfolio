@@ -10,6 +10,7 @@
   height: 100%;
   display: flex;
   align-items: center;
+  margin-left: 20px; /* Space from nav links */
 }
 
 .language-btn {
@@ -108,7 +109,6 @@
 @media (max-width: 768px) {
   .language-switcher {
     margin-left: 0;
-    margin-top: 10px;
   }
   
   .language-dropdown {
@@ -119,9 +119,10 @@
   
   /* Specific positioning for mobile hamburger menu */
   #hamburger-nav .language-switcher {
-    position: absolute;
-    top: 15px;
-    right: 70px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
   }
   
   #hamburger-nav .language-dropdown {

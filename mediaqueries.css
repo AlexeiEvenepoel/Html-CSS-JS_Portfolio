@@ -5,6 +5,11 @@
   #hamburger-nav {
     display: flex;
   }
+  
+  /* Ensure the mobile menu is properly aligned */
+  .hamburger-icon {
+    margin-right: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
