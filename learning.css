@@ -50,7 +50,11 @@
   align-items: center;
   padding: 1.5rem;
   cursor: pointer;
-  background: linear-gradient(90deg, rgba(139, 92, 246, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(139, 92, 246, 0.1) 0%,
+    rgba(59, 130, 246, 0.05) 100%
+  );
   position: relative;
   z-index: 1;
 }
@@ -62,7 +66,11 @@
   left: 0;
   width: 0;
   height: 100%;
-  background: linear-gradient(90deg, rgba(139, 92, 246, 0.2) 0%, rgba(59, 130, 246, 0.1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(139, 92, 246, 0.2) 0%,
+    rgba(59, 130, 246, 0.1) 100%
+  );
   transition: width 0.5s ease;
   z-index: -1;
 }
@@ -72,7 +80,7 @@
 }
 
 #learning .week-badge {
-  background-color: #8B5CF6;
+  background-color: #8b5cf6;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -92,7 +100,7 @@
 #learning .card-title h3 {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #1F2937;
+  color: #1f2937;
   margin: 0;
 }
 
@@ -124,7 +132,7 @@
 #learning .expand-btn .icon {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #8B5CF6;
+  color: #8b5cf6;
   transition: transform 0.3s ease;
 }
 
@@ -136,47 +144,63 @@
 }
 
 #learning .learning-card.active .card-content {
-  max-height: 1000px;
+  max-height: 500px; /* Fixed max height */
   padding-top: 1rem;
   padding-bottom: 1.5rem;
+  overflow-y: auto; /* Add vertical scrollbar when needed */
 }
 
-#learning .learning-card.active .expand-btn .icon {
-  transform: rotate(45deg);
+/* Add styling for the scrollbar */
+#learning .learning-card.active .card-content::-webkit-scrollbar {
+  width: 8px;
 }
 
+#learning .learning-card.active .card-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+#learning .learning-card.active .card-content::-webkit-scrollbar-thumb {
+  background: #8b5cf6;
+  border-radius: 4px;
+}
+
+#learning .learning-card.active .card-content::-webkit-scrollbar-thumb:hover {
+  background: #7c4deb;
+}
+
+/* Ensure carousel remains visible at the bottom */
+#learning .learning-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Improve spacing between sections */
 #learning .topic,
 #learning .exercise,
 #learning .reflection {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
-#learning h4 {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #4B5563;
-  margin-bottom: 0.5rem;
-  position: relative;
-  padding-left: 1rem;
-}
-
-#learning h4::before {
+/* Add scroll indicator for better UX */
+#learning .learning-card.active .card-content::after {
   content: "";
-  position: absolute;
+  position: sticky;
+  bottom: 0;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 4px;
-  height: 16px;
-  background-color: #8B5CF6;
-  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  background: linear-gradient(transparent, rgba(255, 255, 255, 0.9));
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-#learning p {
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: #4B5563;
-  margin-bottom: 0.75rem;
+#learning .learning-card.active .card-content.scrollable::after {
+  opacity: 1;
 }
 
 /* Animación de entrada para las cards */
@@ -196,38 +220,54 @@
   opacity: 0;
 }
 
-#learning .learning-card:nth-child(1) { animation-delay: 0.1s; }
-#learning .learning-card:nth-child(2) { animation-delay: 0.2s; }
-#learning .learning-card:nth-child(3) { animation-delay: 0.3s; }
-#learning .learning-card:nth-child(4) { animation-delay: 0.4s; }
-#learning .learning-card:nth-child(5) { animation-delay: 0.5s; }
-#learning .learning-card:nth-child(6) { animation-delay: 0.6s; }
-#learning .learning-card:nth-child(7) { animation-delay: 0.7s; }
-#learning .learning-card:nth-child(8) { animation-delay: 0.8s; }
+#learning .learning-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+#learning .learning-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+#learning .learning-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+#learning .learning-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+#learning .learning-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+#learning .learning-card:nth-child(6) {
+  animation-delay: 0.6s;
+}
+#learning .learning-card:nth-child(7) {
+  animation-delay: 0.7s;
+}
+#learning .learning-card:nth-child(8) {
+  animation-delay: 0.8s;
+}
 
 /* Media queries para adaptación a diferentes dispositivos */
 @media (min-width: 768px) {
   #learning .learning-cards {
     padding: 0 2rem;
   }
-  
+
   #learning .card-header {
     padding: 1.5rem 2rem;
   }
-  
+
   #learning .card-content {
     padding: 0 2rem;
   }
-  
+
   #learning .learning-card.active .card-content {
     padding-top: 1rem;
     padding-bottom: 2rem;
   }
-  
+
   #learning h4 {
     font-size: 1.1rem;
   }
-  
+
   #learning p {
     font-size: 1rem;
   }

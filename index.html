@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
     <link rel="stylesheet" href="learning.css" />
+    <link rel="stylesheet" href="assets/Learning/components/carousel.css" />
   </head>
   <body>
     <header>
@@ -297,10 +298,11 @@
                 <svg
                   class="link"
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 -960 960 960"
+                  viewBox="0 0 24 24"
                 >
                   <path
-                    d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"
+                    d="M10 20v-6h4v6h5v-8h3L12 2 2 12h3v8z"
+                    fill="currentColor"
                   />
                 </svg>
               </a>
@@ -347,10 +349,11 @@
                 <svg
                   class="link"
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 -960 960 960"
+                  viewBox="0 0 24 24"
                 >
                   <path
-                    d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"
+                    d="M10 20v-6h4v6h5v-8h3L12 2 2 12h3v8z"
+                    fill="currentColor"
                   />
                 </svg>
               </a>
@@ -400,14 +403,16 @@
                 <svg
                   class="link"
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 -960 960 960"
+                  viewBox="0 0 24 24"
                 >
                   <path
-                    d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z"
+                    d="M10 20v-6h4v6h5v-8h3L12 2 2 12h3v8z"
+                    fill="currentColor"
                   />
                 </svg>
               </a>
-            </div>          </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -543,15 +548,24 @@
             <div class="card-content">
               <div class="topic">
                 <h4>Temas Aprendidos</h4>
-                <p>Contenido de la semana 4...</p>
+                <p>
+                  Estudié los fundamentos de JavaScript como lenguaje de programación front-end. Aprendí sobre diferentes motores JavaScript como V8 (Chrome) y SpiderMonkey (Firefox), y cómo afectan el rendimiento. Trabajé con variables usando let, const y var, entendiendo su alcance y hoisting. Exploré los tipos de datos principales: números, strings, booleanos, objetos y arrays, junto con sus métodos específicos. Implementé estructuras de control como if-else, switch, y bucles for, while y do-while para controlar el flujo de mis programas.
+                </p>
+                <p>
+                  Profundicé en funciones JavaScript, comenzando con la sintaxis básica y avanzando hacia conceptos más complejos como funciones anónimas, funciones flecha, closures y funciones auto-invocadas. Entendí cómo las funciones son objetos de primera clase en JavaScript y cómo esto permite patrones de programación más avanzados y flexibles.
+                </p>
               </div>
               <div class="exercise">
                 <h4>Ejercicios de Laboratorio</h4>
-                <p>Ejercicios de la semana 4...</p>
+                <p>
+                  Desarrollamos una serie de mini aplicaciones para practicar lo aprendido: una calculadora simple que maneja operaciones básicas, un validador de formularios que verifica entradas de usuario, y un juego sencillo de adivinanza que utiliza números aleatorios. También implementamos ejercicios con manipulación del DOM para cambiar estilos, contenido y estructura de páginas web dinámicamente en respuesta a eventos de usuario.
+                </p>
               </div>
               <div class="reflection">
                 <h4>Reflexión</h4>
-                <p>Reflexión de la semana 4...</p>
+                <p>
+                  JavaScript me pareció un lenguaje fascinante por su versatilidad y potencia. Entendí que, aunque es fácil comenzar a programar con él, dominar sus conceptos más avanzados requiere práctica constante. Me sorprendió especialmente el concepto de closures y cómo las funciones pueden "recordar" su entorno léxico. La manipulación del DOM me abrió un mundo de posibilidades para crear interfaces dinámicas e interactivas. Aprendí que escribir código limpio y modular es crucial para mantener proyectos JavaScript a largo plazo.
+                </p>
               </div>
             </div>
           </div>
@@ -571,19 +585,16 @@
             <div class="card-content">
               <div class="topic">
                 <h4>Temas Aprendidos</h4>
-                <p>Contenido de la semana 5...</p>
+                <p>
+                  Profundicé en el Document Object Model (DOM) y su papel crucial en la manipulación de páginas web. Estudié cómo JavaScript interactúa con el DOM para seleccionar, modificar, añadir y eliminar elementos HTML dinámicamente. Aprendí diferentes métodos de selección de elementos como getElementById, querySelector y querySelectorAll, así como técnicas para modificar atributos, contenido y estilos CSS mediante JavaScript.
+                </p>
+                <p>
+                  Exploré el sistema de eventos en JavaScript que permite crear interacciones en respuesta a acciones del usuario. Implementé diferentes tipos de eventos como click, submit, keydown, mouseover, y eventos de carga de página. Aprendí sobre el flujo de eventos (captura y burbujeo), cómo prevenir comportamientos predeterminados con preventDefault(), y cómo usar delegación de eventos para mejorar el rendimiento en páginas con muchos elementos interactivos.
+                </p>
               </div>
               <div class="exercise">
                 <h4>Ejercicios de Laboratorio</h4>
-                <p>Ejercicios de la semana 5...</p>
-              </div>
-              <div class="reflection">
-                <h4>Reflexión</h4>
-                <p>Reflexión de la semana 5...</p>
-              </div>
-            </div>
-          </div>
-
+                <p>
           <!-- Semana 6 -->
           <div class="learning-card">
             <div class="card-header">
@@ -972,5 +983,6 @@
     </footer>
     <script src="script.js"></script>
     <script src="learning.js"></script>
+    <script src="assets/Learning/components/carousel.js"></script>
   </body>
 </html>
