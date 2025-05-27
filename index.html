@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+  <head>    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="learning.css" />
   </head>
   <body>
     <header>
       <nav id="desktop-nav">
         <div class="logo">Alexis Omar</div>
         <div>
-          <ul class="nav-links">
-            <li><a href="#about-me">About</a></li>
+          <ul class="nav-links">            <li><a href="#about-me">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#learning">Learning</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact-me">Contact</a></li>
           </ul>
@@ -27,10 +27,10 @@
             <span></span>
             <span></span>
             <span></span>
-          </div>
-          <div class="menu-links">
+          </div>          <div class="menu-links">
             <li><a href="#about-me" onclick="toggleMenu()">About</a></li>
             <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+            <li><a href="#learning" onclick="toggleMenu()">Learning</a></li>
             <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
             <li><a href="#contact-me" onclick="toggleMenu()">Contact</a></li>
           </div>
@@ -407,11 +407,270 @@
                   />
                 </svg>
               </a>
+            </div>          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning Section -->
+    <section id="learning">
+      <div class="cnt">
+        <div class="cnt-text">
+          <h4>My Journey & Progress</h4>
+          <h2>Learning Journey</h2>
+        </div>
+        <div class="learning-cards">
+          <!-- Semana 1 -->
+          <div class="learning-card">
+            <div class="card-header">
+              <div class="week-badge">Semana 1</div>
+              <div class="card-title">
+                <h3>Fundamentos de la Web</h3>
+                <img src="assets/Learning/week-icon.svg" alt="Semana 1" />
+              </div>
+              <button class="expand-btn">
+                <span class="icon">+</span>
+              </button>
+            </div>
+            <div class="card-content">
+              <div class="topic">
+                <h4>Temas Aprendidos</h4>
+                <p>
+                  Entendí que existen diferentes tipos de soluciones web: sistemas web que manejan datos complejos, aplicaciones web con funcionalidades interactivas, sitios web con múltiples páginas relacionadas, y páginas web individuales. Las tecnologías web incluyen HTML para estructura, CSS para diseño, y JavaScript para interactividad. La web funciona gracias a protocolos como DNS (que convierte nombres de dominio en direcciones IP), TCP/IP (que gestiona la transmisión de datos), y HTTP (que permite la comunicación entre cliente y servidor).
+                </p>
+              </div>
+              <div class="exercise">
+                <h4>Ejercicios de Laboratorio</h4>
+                <p>
+                  Creamos diagramas explicando el funcionamiento de la web, desde la solicitud del usuario hasta la respuesta del servidor. Identificamos los diferentes roles en un proyecto web y sus responsabilidades.
+                </p>
+              </div>
+              <div class="reflection">
+                <h4>Reflexión</h4>
+                <p>
+                  Aprendí la importancia de entender los fundamentos antes de empezar a programar. Comprendí que el desarrollo web no solo implica código, sino también entender cómo funciona internet y los diferentes roles involucrados. Aprendí mediante explicaciones teóricas, diagramas visuales y discusiones en clase que me ayudaron a conectar conceptos.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Semana 2 -->
+          <div class="learning-card">
+            <div class="card-header">
+              <div class="week-badge">Semana 2</div>
+              <div class="card-title">
+                <h3>HTML, XML y CSS</h3>
+                <img src="assets/Learning/week-icon.svg" alt="Semana 2" />
+              </div>
+              <button class="expand-btn">
+                <span class="icon">+</span>
+              </button>
+            </div>
+            <div class="card-content">
+              <div class="topic">
+                <h4>Temas Aprendidos</h4>
+                <p>
+                  Exploré las diferencias y similitudes entre HTML y XML como lenguajes de marcado. Aprendí sobre el estándar Open Web Platform y cómo los navegadores interpretan HTML. Profundicé en la estructura del Árbol DOM, entendiendo cómo los elementos se organizan jerárquicamente y cómo el navegador renderiza este árbol. También aprendí sobre el ciclo de vida de una página web y conceptos de SEO para mejorar la visibilidad en motores de búsqueda.
+                </p>
+                <p>
+                  En la parte de CSS, estudié la sintaxis básica, los diferentes tipos de selectores, y los modelos de caja (block, inline, inline-block). Exploré unidades de medida absolutas (px, pt) y relativas (%, em, rem, vw, vh). Aprendí sistemas de layout modernos como flexbox y grid, además de las propiedades position para controlar el posicionamiento de elementos.
+                </p>
+              </div>
+              <div class="exercise">
+                <h4>Ejercicios de Laboratorio</h4>
+                <p>
+                  Creamos una página web básica utilizando HTML5 con elementos semánticos. Aplicamos estilos CSS utilizando diferentes selectores y propiedades. Implementamos layouts responsivos usando media queries, flexbox y grid.
+                </p>
+              </div>
+              <div class="reflection">
+                <h4>Reflexión</h4>
+                <p>
+                  Descubrí que HTML y CSS forman una base fundamental para cualquier proyecto web. La estructura semántica de HTML5 no solo ayuda a organizar el contenido sino también mejora la accesibilidad y el SEO. Las capacidades de CSS moderno me sorprendieron, especialmente flexbox y grid que simplifican la creación de layouts complejos. Aprendí mediante la práctica directa, experimentando con diferentes propiedades y analizando su efecto en el navegador.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Semana 3 -->
+          <div class="learning-card">
+            <div class="card-header">
+              <div class="week-badge">Semana 3</div>
+              <div class="card-title">
+                <h3>Bootstrap y Tailwind CSS</h3>
+                <img src="assets/Learning/week-icon.svg" alt="Semana 3" />
+              </div>
+              <button class="expand-btn">
+                <span class="icon">+</span>
+              </button>
+            </div>
+            <div class="card-content">
+              <div class="topic">
+                <h4>Temas Aprendidos</h4>
+                <p>
+                  Exploré dos de las bibliotecas CSS más populares: Bootstrap y Tailwind. Con Bootstrap, aprendí a utilizar su sistema de rejilla para crear layouts responsivos y sus componentes predefinidos como navegación, tarjetas y modales. Con Tailwind, descubrí un enfoque basado en utilidades donde se aplican clases pequeñas y específicas directamente en el HTML.
+                </p>
+                <p>
+                  Profundicé en características como tipografía, manejo de fondos, bordes, efectos y tablas en ambas bibliotecas. Entendí cómo usar contenedores, columnas y elementos de interfaz de usuario como avatares, insignias, menús desplegables y botones. También exploré componentes más complejos como formularios, sistemas de navegación y superposiciones.
+                </p>
+              </div>
+              <div class="exercise">
+                <h4>Ejercicios de Laboratorio</h4>
+                <p>
+                  Creamos una página web con Bootstrap implementando una barra de navegación, un carrusel de imágenes y un sistema de tarjetas. Luego, recreamos la misma interfaz utilizando Tailwind CSS para comparar ambos enfoques. Adaptamos el diseño para que sea completamente responsivo en diferentes tamaños de pantalla.
+                </p>
+              </div>
+              <div class="reflection">
+                <h4>Reflexión</h4>
+                <p>
+                  Aprendí que las bibliotecas CSS aceleran enormemente el desarrollo y mantienen una consistencia visual. Bootstrap ofrece componentes listos para usar que requieren menos código personalizado, mientras que Tailwind proporciona mayor flexibilidad y control al precio de un HTML más verboso. Cada biblioteca tiene sus ventajas según el tipo de proyecto y preferencias del equipo. Aprendí principalmente mediante la implementación práctica, comparando enfoques y personalizando componentes según necesidades específicas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Semana 4 -->
+          <div class="learning-card">
+            <div class="card-header">
+              <div class="week-badge">Semana 4</div>
+              <div class="card-title">
+                <h3>JavaScript Básico</h3>
+                <img src="assets/Learning/week-icon.svg" alt="Semana 4" />
+              </div>
+              <button class="expand-btn">
+                <span class="icon">+</span>
+              </button>
+            </div>
+            <div class="card-content">
+              <div class="topic">
+                <h4>Temas Aprendidos</h4>
+                <p>Contenido de la semana 4...</p>
+              </div>
+              <div class="exercise">
+                <h4>Ejercicios de Laboratorio</h4>
+                <p>Ejercicios de la semana 4...</p>
+              </div>
+              <div class="reflection">
+                <h4>Reflexión</h4>
+                <p>Reflexión de la semana 4...</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Semana 5 -->
+          <div class="learning-card">
+            <div class="card-header">
+              <div class="week-badge">Semana 5</div>
+              <div class="card-title">
+                <h3>DOM y Eventos</h3>
+                <img src="assets/Learning/week-icon.svg" alt="Semana 5" />
+              </div>
+              <button class="expand-btn">
+                <span class="icon">+</span>
+              </button>
+            </div>
+            <div class="card-content">
+              <div class="topic">
+                <h4>Temas Aprendidos</h4>
+                <p>Contenido de la semana 5...</p>
+              </div>
+              <div class="exercise">
+                <h4>Ejercicios de Laboratorio</h4>
+                <p>Ejercicios de la semana 5...</p>
+              </div>
+              <div class="reflection">
+                <h4>Reflexión</h4>
+                <p>Reflexión de la semana 5...</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Semana 6 -->
+          <div class="learning-card">
+            <div class="card-header">
+              <div class="week-badge">Semana 6</div>
+              <div class="card-title">
+                <h3>APIs y Fetch</h3>
+                <img src="assets/Learning/week-icon.svg" alt="Semana 6" />
+              </div>
+              <button class="expand-btn">
+                <span class="icon">+</span>
+              </button>
+            </div>
+            <div class="card-content">
+              <div class="topic">
+                <h4>Temas Aprendidos</h4>
+                <p>Contenido de la semana 6...</p>
+              </div>
+              <div class="exercise">
+                <h4>Ejercicios de Laboratorio</h4>
+                <p>Ejercicios de la semana 6...</p>
+              </div>
+              <div class="reflection">
+                <h4>Reflexión</h4>
+                <p>Reflexión de la semana 6...</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Semana 7 -->
+          <div class="learning-card">
+            <div class="card-header">
+              <div class="week-badge">Semana 7</div>
+              <div class="card-title">
+                <h3>Frameworks Frontend</h3>
+                <img src="assets/Learning/week-icon.svg" alt="Semana 7" />
+              </div>
+              <button class="expand-btn">
+                <span class="icon">+</span>
+              </button>
+            </div>
+            <div class="card-content">
+              <div class="topic">
+                <h4>Temas Aprendidos</h4>
+                <p>Contenido de la semana 7...</p>
+              </div>
+              <div class="exercise">
+                <h4>Ejercicios de Laboratorio</h4>
+                <p>Ejercicios de la semana 7...</p>
+              </div>
+              <div class="reflection">
+                <h4>Reflexión</h4>
+                <p>Reflexión de la semana 7...</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Semana 8 -->
+          <div class="learning-card">
+            <div class="card-header">
+              <div class="week-badge">Semana 8</div>
+              <div class="card-title">
+                <h3>Proyecto Final</h3>
+                <img src="assets/Learning/week-icon.svg" alt="Semana 8" />
+              </div>
+              <button class="expand-btn">
+                <span class="icon">+</span>
+              </button>
+            </div>
+            <div class="card-content">
+              <div class="topic">
+                <h4>Temas Aprendidos</h4>
+                <p>Contenido de la semana 8...</p>
+              </div>
+              <div class="exercise">
+                <h4>Ejercicios de Laboratorio</h4>
+                <p>Ejercicios de la semana 8...</p>
+              </div>
+              <div class="reflection">
+                <h4>Reflexión</h4>
+                <p>Reflexión de la semana 8...</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- section#skills>.cnt>(.txt>h2)+(.card>div*4>(div>h4)+(div>img)+(.btn-lng>button*2)) -->
     <section id="skills">
       <div class="cnt">
@@ -712,5 +971,6 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <script src="learning.js"></script>
   </body>
 </html>
