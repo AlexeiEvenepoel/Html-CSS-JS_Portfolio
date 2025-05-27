@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,22 +8,40 @@
     <link rel="stylesheet" href="mediaqueries.css" />
     <link rel="stylesheet" href="learning.css" />
     <link rel="stylesheet" href="assets/Learning/components/carousel.css" />
+    <link rel="stylesheet" href="components/language-switcher/language-switcher.css" />
   </head>
-  <body>
-    <header>
+  <body>    <header>      
       <nav id="desktop-nav">
         <div class="logo">Alexis Omar</div>
-        <div>
+        <div class="nav-container">
           <ul class="nav-links">
-            <li><a href="#about-me">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#learning">Learning</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact-me">Contact</a></li>
+            <li><a href="#about-me" data-i18n="about">Sobre mí</a></li>
+            <li><a href="#portfolio" data-i18n="portfolio">Portafolio</a></li>
+            <li><a href="#learning" data-i18n="learning">Aprendizaje</a></li>
+            <li><a href="#skills" data-i18n="skills">Habilidades</a></li>
+            <li><a href="#contact-me" data-i18n="contact">Contacto</a></li>
           </ul>
+          <!-- Language Switcher -->
+          <div class="language-switcher">
+            <button class="language-btn" aria-label="Switch language">
+              <div class="current-lang">
+                <img src="assets/flags/es.svg" alt="Current language flag" class="flag-icon">
+                <span>ES</span>
+              </div>
+            </button>
+            <div class="language-dropdown">
+              <a href="#" class="language-option active" data-lang="es">
+                <img src="assets/flags/es.svg" alt="Spanish" class="flag-icon">
+                Español
+              </a>
+              <a href="#" class="language-option" data-lang="en">
+                <img src="assets/flags/en.svg" alt="English" class="flag-icon">
+                English
+              </a>
+            </div>
+          </div>
         </div>
-      </nav>
-      <nav id="hamburger-nav">
+      </nav><nav id="hamburger-nav">
         <div class="logo-mobile">AO</div>
         <div class="hamburger-menu">
           <div class="hamburger-icon" onclick="toggleMenu()">
@@ -32,11 +50,30 @@
             <span></span>
           </div>
           <div class="menu-links">
-            <li><a href="#about-me" onclick="toggleMenu()">About</a></li>
-            <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
-            <li><a href="#learning" onclick="toggleMenu()">Learning</a></li>
-            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-            <li><a href="#contact-me" onclick="toggleMenu()">Contact</a></li>
+            <li><a href="#about-me" onclick="toggleMenu()" data-i18n="about">Sobre mí</a></li>
+            <li><a href="#portfolio" onclick="toggleMenu()" data-i18n="portfolio">Portafolio</a></li>
+            <li><a href="#learning" onclick="toggleMenu()" data-i18n="learning">Aprendizaje</a></li>
+            <li><a href="#skills" onclick="toggleMenu()" data-i18n="skills">Habilidades</a></li>
+            <li><a href="#contact-me" onclick="toggleMenu()" data-i18n="contact">Contacto</a></li>
+          </div>
+        </div>
+        <!-- Language Switcher for Mobile -->
+        <div class="language-switcher mobile">
+          <button class="language-btn" aria-label="Switch language">
+            <div class="current-lang">
+              <img src="assets/flags/es.svg" alt="Current language flag" class="flag-icon">
+              <span>ES</span>
+            </div>
+          </button>
+          <div class="language-dropdown">
+            <a href="#" class="language-option active" data-lang="es">
+              <img src="assets/flags/es.svg" alt="Spanish" class="flag-icon">
+              Español
+            </a>
+            <a href="#" class="language-option" data-lang="en">
+              <img src="assets/flags/en.svg" alt="English" class="flag-icon">
+              English
+            </a>
           </div>
         </div>
       </nav>
@@ -47,17 +84,14 @@
           <h1>
             Alexis<br />
             Omar.
-          </h1>
-        </div>
-        <p>Front-End Web Developer, passionate about Design UX.</p>
+          </h1>        </div>
+        <p data-i18n="developer_desc">Desarrollador Web Front-End, apasionado por el Diseño UX.</p>
         <div class="buttons">
           <button onclick="window.open('./assets/cv.pdf')">
-            <img src="assets/Presentation/download.svg" alt="Icono" />Download
-            CV
+            <img src="assets/Presentation/download.svg" alt="Icono" /><span data-i18n="download_cv">Descargar CV</span>
           </button>
           <button onclick="location.href='#contact-me'">
-            <img src="assets/Presentation/contact me.svg" alt="Icono" />Contact
-            me
+            <img src="assets/Presentation/contact me.svg" alt="Icono" /><span data-i18n="contact_me">Contáctame</span>
           </button>
         </div>
         <!-- Social Networks -->
@@ -159,12 +193,11 @@
         </ul>
 
       </div>
-    </section>
-    <section id="about-me">
+    </section>    <section id="about-me">
       <div class="cnt">
         <div class="cnt-text">
-          <h4>Who I'm</h4>
-          <h2>About me</h2>
+          <h4 data-i18n="who_im">Quién soy</h4>
+          <h2 data-i18n="about_me">Sobre mí</h2>
         </div>
         <div class="img-Alexis-Omar">
           <img
@@ -173,19 +206,14 @@
           />
         </div>
         <div class="txt">
-          <p>
-            I love to create websites that provide a unique and satisfying user
-            experience. You can see some of my projects in the
-            <span><a href="#portfolio">portfolio</a></span> section.
+          <p data-i18n="about_text_1">
+            Me encanta crear sitios web que brinden una experiencia de usuario única y satisfactoria. Puedes ver algunos de mis proyectos en la sección de <span><a href="#portfolio">portafolio</a></span>.
           </p>
-          <p>
-            Self-taught, responsible, and committed to my work, constantly
-            learning new technologies and tools to improve my skills. Below, you
-            can see my portfolio and technologies I use.
+          <p data-i18n="about_text_2">
+            Autodidacta, responsable y comprometido con mi trabajo, constantemente aprendiendo nuevas tecnologías y herramientas para mejorar mis habilidades. A continuación, puedes ver mi portafolio y las tecnologías que utilizo.
           </p>
-          <p class="left">
-            Feel free to <span><a href="#contact-me">contact</a></span> me if
-            you have any questions.
+          <p class="left" data-i18n="about_text_3">
+            No dudes en <span><a href="#contact-me">contactarme</a></span> si tienes alguna pregunta.
           </p>
         </div>
         <ul>
@@ -260,12 +288,11 @@
       </div>
     </section>
 
-    <!-- section#portfolio>.cnt>(.cnt-text>h4+h2)+.cards>.card*3>img+h3+p+(.btn-lng>button*3)+(.btn-links>button*2) -->
-    <section id="portfolio">
+    <!-- section#portfolio>.cnt>(.cnt-text>h4+h2)+.cards>.card*3>img+h3+p+(.btn-lng>button*3)+(.btn-links>button*2) -->    <section id="portfolio">
       <div class="cnt">
         <div class="cnt-text">
-          <h4>Some of my Projects</h4>
-          <h2>Portfolio</h2>
+          <h4 data-i18n="some_projects">Algunos de mis Proyectos</h4>
+          <h2 data-i18n="portfolio_title">Portafolio</h2>
         </div>
         <div class="card">
           <div>
@@ -395,14 +422,12 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Learning Section -->
+    </section>    <!-- Learning Section -->
     <section id="learning">
       <div class="cnt">
         <div class="cnt-text">
-          <h4>My Journey & Progress</h4>
-          <h2>Learning Journey</h2>
+          <h4 data-i18n="journey_progress">Mi Trayectoria y Progreso</h4>
+          <h2 data-i18n="learning_journey">Recorrido de Aprendizaje</h2>
         </div>
         <div class="learning-cards">
           <!-- Semana 1 -->
@@ -666,16 +691,15 @@
       </div>
     </section>
 
-    <!-- section#skills>.cnt>(.txt>h2)+(.card>div*4>(div>h4)+(div>img)+(.btn-lng>button*2)) -->
-    <section id="skills">
+    <!-- section#skills>.cnt>(.txt>h2)+(.card>div*4>(div>h4)+(div>img)+(.btn-lng>button*2)) -->    <section id="skills">
       <div class="cnt">
         <div class="txt">
-          <h2>Skills</h2>
+          <h2 data-i18n="skills_title">Habilidades</h2>
         </div>
         <div class="card-cnt">
           <div class="card">
             <div>
-              <h3>Front-End</h3>
+              <h3 data-i18n="front_end">Front-End</h3>
             </div>
             <div class="icon">
               <img src="assets/Skills/front-end.svg" alt="" />
@@ -753,13 +777,11 @@
     <!-- section#.contact-me>.cnt>(contact-me>h4+h2+p+(.item-info>img+p)*3)+(form>input.name+input.email+input.subject+input.msg+(button>img))    -->
     <section id="contact-me">
       <div class="cnt">
-        <div class="info">
-          <div class="txt">
-            <h4>It's now or never</h4>
-            <h2>Contact me</h2>
-            <p class="info-txt">
-              If you have any questions and/or would like me to be part of your
-              team, you can fill out the form or contact me through these means:
+        <div class="info">          <div class="txt">
+            <h4 data-i18n="now_or_never">Es ahora o nunca</h4>
+            <h2 data-i18n="contact_title">Contáctame</h2>
+            <p class="info-txt" data-i18n="contact_info">
+              Si tienes alguna pregunta y/o te gustaría que forme parte de tu equipo, puedes completar el formulario o contactarme a través de estos medios:
             </p>
           </div>
           <div class="item">
@@ -780,15 +802,15 @@
         <form
           action="https://formsubmit.co/alexisomar136@gmail.com"
           method="POST"
-        >
-          <div class="input-group">
-            <input type="text" name="name" id="name" placeholder="Name" />
-            <input type="text" name="email" id="email" placeholder="Email" />
+        >          <div class="input-group">
+            <input type="text" name="name" id="name" placeholder="Name" data-i18n="name" />
+            <input type="text" name="email" id="email" placeholder="Email" data-i18n="email" />
             <input
               type="text"
               name="subject"
               id="subject"
               placeholder="Subject"
+              data-i18n="subject"
             />
             <textarea
               name="message"
@@ -796,6 +818,7 @@
               cols="30"
               rows="5"
               placeholder="Message"
+              data-i18n="message"
             ></textarea>
             <button class="btn" type="submit" value="Submit">
               <img src="assets/Presentation/contact me.svg" alt="Send Icon" />
@@ -814,13 +837,12 @@
     </section>
     <!-- section#finaltxt>cnt>h4+button{Contact me}+p+.btn-sn>button*3>img -->
     <section id="finaltxt">
-      <div class="cnt">
-        <h4>Thank you for visiting my web site🤟</h4>
+      <div class="cnt">        <h4 data-i18n="thank_you">Gracias por visitar mi sitio web🤟</h4>
         <button onclick="location.href='#contact-me'">
-          Contact me
+          <span data-i18n="contact_me">Contáctame</span>
           <img src="assets/Presentation/contact me.svg" alt="Send Icon" />
         </button>
-        <p>Or you can also contact me through:</p>
+        <p data-i18n="also_contact">O también puedes contactarme a través de:</p>
         <ul class="example-2">
           <li class="icon-content">
             <a href="https://www.linkedin.com/in/alexis-omar/" target="_blank"
@@ -968,5 +990,6 @@
     <script src="script.js"></script>
     <script src="learning.js"></script>
     <script src="assets/Learning/components/carousel.js"></script>
+    <script src="components/language-switcher/language-switcher.js"></script>
   </body>
 </html>
