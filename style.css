@@ -34,6 +34,7 @@ h2 {
     rgba(0, 212, 255, 1) 100%
   );
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -61,26 +62,26 @@ button {
 
 /* Desktop nav */
 
-nav,
-.nav-links {
+nav {
   display: flex;
   align-items: center;
-  height: 17vh;
-}
-
-nav {
   justify-content: space-between;
+  height: 80px; /* Fixed height for consistency */
   padding: 0 5%;
 }
 
 .nav-links {
+  display: flex;
+  align-items: center;
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
+  height: 100%;
 }
 
 .logo {
   font-size: 2rem;
+  font-weight: bold;
   display: flex;
   align-items: center;
   height: 100%;
@@ -90,9 +91,16 @@ nav {
   color: purple;
 }
 
-nav > div:last-child {
+.nav-container {
   display: flex;
   align-items: center;
+  height: 100%;
+}
+
+nav .nav-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 a {

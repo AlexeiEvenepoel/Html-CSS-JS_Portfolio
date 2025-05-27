@@ -4,11 +4,17 @@
   }
   #hamburger-nav {
     display: flex;
+    align-items: center;
   }
-  
+
   /* Ensure the mobile menu is properly aligned */
   .hamburger-icon {
     margin-right: 0;
+  }
+
+  /* Mobile language switcher alignment */
+  #hamburger-nav .language-switcher {
+    margin-right: 15px;
   }
 }
 
@@ -17,7 +23,7 @@
   #learning .learning-cards {
     width: 90%;
   }
-  
+
   #learning .card-title h3 {
     font-size: 1.3rem;
   }
@@ -29,15 +35,15 @@
     width: 80%;
     max-width: 900px;
   }
-  
+
   #learning .card-header {
     padding: 1.75rem 2.5rem;
   }
-  
+
   #learning .card-content {
     padding: 0 2.5rem;
   }
-  
+
   #learning .learning-card.active .card-content {
     padding-bottom: 2.5rem;
   }

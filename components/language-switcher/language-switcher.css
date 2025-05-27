@@ -3,14 +3,13 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 #desktop-nav .language-switcher {
   height: 100%;
   display: flex;
   align-items: center;
-  margin-left: 20px; /* Space from nav links */
 }
 
 .language-btn {
@@ -26,6 +25,7 @@
   padding: 8px 12px;
   border-radius: 4px;
   transition: all 0.3s ease;
+  height: 100%;
 }
 
 .language-btn:hover {
@@ -110,13 +110,13 @@
   .language-switcher {
     margin-left: 0;
   }
-  
+
   .language-dropdown {
     width: 100%;
     left: 0;
     right: auto;
   }
-  
+
   /* Specific positioning for mobile hamburger menu */
   #hamburger-nav .language-switcher {
     position: relative;
@@ -124,7 +124,7 @@
     align-items: center;
     margin-right: 20px;
   }
-  
+
   #hamburger-nav .language-dropdown {
     right: 0;
     left: auto;
