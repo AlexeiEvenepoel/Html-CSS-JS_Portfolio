@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>    <meta charset="UTF-8" />
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
@@ -13,7 +14,8 @@
       <nav id="desktop-nav">
         <div class="logo">Alexis Omar</div>
         <div>
-          <ul class="nav-links">            <li><a href="#about-me">About</a></li>
+          <ul class="nav-links">
+            <li><a href="#about-me">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#learning">Learning</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -28,7 +30,8 @@
             <span></span>
             <span></span>
             <span></span>
-          </div>          <div class="menu-links">
+          </div>
+          <div class="menu-links">
             <li><a href="#about-me" onclick="toggleMenu()">About</a></li>
             <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
             <li><a href="#learning" onclick="toggleMenu()">Learning</a></li>
@@ -41,7 +44,10 @@
     <section id="presentation">
       <div class="container">
         <div class="text">
-          <h1>Alexis<br />Omar.</h1>
+          <h1>
+            Alexis<br />
+            Omar.
+          </h1>
         </div>
         <p>Front-End Web Developer, passionate about Design UX.</p>
         <div class="buttons">
@@ -57,19 +63,13 @@
         <!-- Social Networks -->
         <ul class="example-2">
           <li class="icon-content">
-            <a href="https://www.linkedin.com/in/alexis-omar/" target="_blank"
+            <a
+              href="https://www.linkedin.com/in/alexis-omar/"
+              target="_blank"
               aria-label="LinkedIn"
               data-social="linkedin"
             >
               <div class="filled"></div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-linkedin"
-                viewBox="0 0 16 16"
-                xml:space="preserve"
               >
                 <path
                   d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
@@ -576,51 +576,71 @@
               <div class="week-badge">Semana 5</div>
               <div class="card-title">
                 <h3>DOM y Eventos</h3>
-                <img src="assets/Learning/week-icon.svg" alt="Semana 5" />
+                <img src="assets/Learning/week-icon.svg" alt="Semana 4" />
               </div>
               <button class="expand-btn">
                 <span class="icon">+</span>
               </button>
             </div>
             <div class="card-content">
-              <div class="topic">
-                <h4>Temas Aprendidos</h4>
-                <p>
-                  Profundicé en el Document Object Model (DOM) y su papel crucial en la manipulación de páginas web. Estudié cómo JavaScript interactúa con el DOM para seleccionar, modificar, añadir y eliminar elementos HTML dinámicamente. Aprendí diferentes métodos de selección de elementos como getElementById, querySelector y querySelectorAll, así como técnicas para modificar atributos, contenido y estilos CSS mediante JavaScript.
-                </p>
-                <p>
-                  Exploré el sistema de eventos en JavaScript que permite crear interacciones en respuesta a acciones del usuario. Implementé diferentes tipos de eventos como click, submit, keydown, mouseover, y eventos de carga de página. Aprendí sobre el flujo de eventos (captura y burbujeo), cómo prevenir comportamientos predeterminados con preventDefault(), y cómo usar delegación de eventos para mejorar el rendimiento en páginas con muchos elementos interactivos.
-                </p>
-              </div>
-              <div class="exercise">
-                <h4>Ejercicios de Laboratorio</h4>
-                <p>
+  <div class="topic">
+    <h4>Temas Aprendidos</h4>
+    <p>
+      Profundicé en el Document Object Model (DOM) y su papel crucial en la manipulación de páginas web. Estudié cómo JavaScript interactúa con el DOM para seleccionar, modificar, añadir y eliminar elementos HTML dinámicamente. Aprendí diferentes métodos de selección de elementos como getElementById, querySelector y querySelectorAll, así como técnicas para modificar atributos, contenido y estilos CSS mediante JavaScript.
+    </p>
+    <p>
+      Exploré el sistema de eventos en JavaScript que permite crear interacciones en respuesta a acciones del usuario. Implementé diferentes tipos de eventos como click, submit, keydown, mouseover, y eventos de carga de página. Aprendí sobre el flujo de eventos (captura y burbujeo), cómo prevenir comportamientos predeterminados con preventDefault(), y cómo usar delegación de eventos para mejorar el rendimiento en páginas con muchos elementos interactivos.
+    </p>
+  </div>
+  <div class="exercise">
+    <h4>Ejercicios de Laboratorio</h4>
+    <p>
+      Desarrollamos una aplicación de lista de tareas que permitía agregar, marcar como completadas y eliminar tareas mediante manipulación del DOM. También creamos un formulario interactivo con validación en tiempo real que proporcionaba retroalimentación inmediata al usuario. Implementamos una galería de imágenes con navegación y efectos visuales utilizando eventos y manipulación de estilos CSS mediante JavaScript.
+    </p>
+  </div>
+  <div class="reflection">
+    <h4>Reflexión</h4>
+    <p>
+      Comprendí que el DOM y los eventos son la base de la interactividad en aplicaciones web modernas. La capacidad de manipular la estructura y apariencia de una página en respuesta a acciones del usuario abre infinitas posibilidades creativas. Me sorprendió especialmente la delegación de eventos como técnica para optimizar el rendimiento. Encontré desafiante pero gratificante implementar interfaces que responden de manera fluida e intuitiva a las interacciones del usuario, lo que me dio una nueva perspectiva sobre la experiencia de usuario en aplicaciones web.
+    </p>
+  </div>
+</div>
+          </div>
           <!-- Semana 6 -->
           <div class="learning-card">
             <div class="card-header">
               <div class="week-badge">Semana 6</div>
               <div class="card-title">
-                <h3>APIs y Fetch</h3>
-                <img src="assets/Learning/week-icon.svg" alt="Semana 6" />
+                <h3>Apis y Fetch</h3>
+                <img src="assets/Learning/week-icon.svg" alt="Semana 4" />
               </div>
               <button class="expand-btn">
                 <span class="icon">+</span>
               </button>
             </div>
             <div class="card-content">
-              <div class="topic">
-                <h4>Temas Aprendidos</h4>
-                <p>Contenido de la semana 6...</p>
-              </div>
-              <div class="exercise">
-                <h4>Ejercicios de Laboratorio</h4>
-                <p>Ejercicios de la semana 6...</p>
-              </div>
-              <div class="reflection">
-                <h4>Reflexión</h4>
-                <p>Reflexión de la semana 6...</p>
-              </div>
-            </div>
+  <div class="topic">
+    <h4>Temas Aprendidos</h4>
+    <p>
+      Estudié cómo consumir APIs externas utilizando diferentes métodos en JavaScript. Profundicé en el objeto XMLHttpRequest tradicional y luego avancé hacia la API Fetch moderna, que proporciona una interfaz más potente y flexible para realizar solicitudes HTTP. Aprendí a estructurar solicitudes GET, POST, PUT y DELETE, y a manejar encabezados y cuerpos de peticiones.
+    </p>
+    <p>
+      Exploré el concepto de operaciones asíncronas en JavaScript mediante callbacks, promesas y la sintaxis async/await. Comprendí cómo manejar respuestas exitosas y errores de manera efectiva, implementando patrones para gestionar estados de carga, éxito y error. También estudié la biblioteca Axios como alternativa a Fetch, entendiendo sus ventajas como la configuración global, interceptores y manejo automático de transformación de datos JSON.
+    </p>
+  </div>
+  <div class="exercise">
+    <h4>Ejercicios de Laboratorio</h4>
+    <p>
+      Creamos una aplicación de clima que consumía una API meteorológica para mostrar datos actualizados según la ubicación ingresada por el usuario. Desarrollamos un panel de noticias que obtenía artículos recientes de una API de noticias, permitiendo filtrar por categorías. También implementamos un sistema de búsqueda de películas conectado a una API de cine, mostrando información detallada, imágenes y calificaciones.
+    </p>
+  </div>
+  <div class="reflection">
+    <h4>Reflexión</h4>
+    <p>
+      Esta semana transformó mi comprensión sobre cómo las aplicaciones web modernas interactúan con servicios externos. Entendí que el manejo correcto de operaciones asíncronas es crucial para crear interfaces fluidas que no se bloqueen mientras esperan respuestas del servidor. La sintaxis async/await me pareció particularmente elegante para escribir código asíncrono que se lee casi como código síncrono. Aprendí que un buen manejo de errores y estados de carga es tan importante como el procesamiento exitoso de datos para proporcionar una experiencia de usuario completa.
+    </p>
+  </div>
+</div>
           </div>
 
           <!-- Semana 7 -->
@@ -628,56 +648,40 @@
             <div class="card-header">
               <div class="week-badge">Semana 7</div>
               <div class="card-title">
-                <h3>Frameworks Frontend</h3>
-                <img src="assets/Learning/week-icon.svg" alt="Semana 7" />
+                <h3>Uso de Hooks</h3>
+                <img src="assets/Learning/week-icon.svg" alt="Semana 4" />
               </div>
               <button class="expand-btn">
                 <span class="icon">+</span>
               </button>
             </div>
             <div class="card-content">
-              <div class="topic">
-                <h4>Temas Aprendidos</h4>
-                <p>Contenido de la semana 7...</p>
-              </div>
-              <div class="exercise">
-                <h4>Ejercicios de Laboratorio</h4>
-                <p>Ejercicios de la semana 7...</p>
-              </div>
-              <div class="reflection">
-                <h4>Reflexión</h4>
-                <p>Reflexión de la semana 7...</p>
-              </div>
-            </div>
+  <div class="topic">
+    <h4>Temas Aprendidos</h4>
+    <p>
+      En esta última semana, exploré los Hooks en React, una característica que permite usar estado y otras funcionalidades de React sin escribir clases. Estudié los hooks más comunes como useState para gestionar el estado local, useEffect para efectos secundarios, useContext para consumir contextos, useRef para referencias mutables, useReducer para estados complejos, useCallback para memorizar funciones y useMemo para memorizar valores computados. También aprendí a crear hooks personalizados para encapsular y reutilizar lógica entre componentes.
+    </p>
+    <p>
+      Integré todo el conocimiento adquirido durante el curso en un proyecto final completo, desde la estructura de componentes y el enrutamiento, hasta la gestión del estado y el consumo de APIs. Implementé patrones avanzados como el renderizado condicional para mostrar diferentes interfaces según el estado, y el renderizado iterativo para generar listas de elementos dinámicamente. También apliqué conceptos de formularios controlados, validación y navegación entre páginas.
+    </p>
+  </div>
+  <div class="exercise">
+    <h4>Ejercicios de Laboratorio</h4>
+    <p>
+      Desarrollamos una aplicación web completa que integraba todas las tecnologías y conceptos aprendidos durante el curso. El proyecto incluía múltiples páginas navegables, formularios con validación, consumo de APIs externas, y una interfaz responsiva adaptable a diferentes dispositivos. Implementamos un sistema de autenticación simulado, un panel de administración, y diversas funcionalidades específicas según el tipo de aplicación elegida por cada estudiante.
+    </p>
+  </div>
+  <div class="reflection">
+    <h4>Reflexión</h4>
+    <p>
+      El proyecto final representó un hito importante en mi aprendizaje, permitiéndome ver cómo todas las piezas se unen para crear una aplicación web moderna y funcional. Los hooks de React me impresionaron por su capacidad para simplificar y organizar la lógica de los componentes, haciendo el código más legible y mantenible. Me di cuenta de cuánto había avanzado desde las primeras semanas, cuando apenas comprendía los fundamentos de HTML y CSS. Ahora me siento capaz de abordar proyectos reales con confianza, entendiendo no solo el "cómo" sino también el "por qué" detrás de las decisiones de arquitectura y diseño en el desarrollo frontend.
+    </p>
+  </div>
+</div>
           </div>
+          
 
-          <!-- Semana 8 -->
-          <div class="learning-card">
-            <div class="card-header">
-              <div class="week-badge">Semana 8</div>
-              <div class="card-title">
-                <h3>Proyecto Final</h3>
-                <img src="assets/Learning/week-icon.svg" alt="Semana 8" />
-              </div>
-              <button class="expand-btn">
-                <span class="icon">+</span>
-              </button>
-            </div>
-            <div class="card-content">
-              <div class="topic">
-                <h4>Temas Aprendidos</h4>
-                <p>Contenido de la semana 8...</p>
-              </div>
-              <div class="exercise">
-                <h4>Ejercicios de Laboratorio</h4>
-                <p>Ejercicios de la semana 8...</p>
-              </div>
-              <div class="reflection">
-                <h4>Reflexión</h4>
-                <p>Reflexión de la semana 8...</p>
-              </div>
-            </div>
-          </div>
+  
         </div>
       </div>
     </section>
