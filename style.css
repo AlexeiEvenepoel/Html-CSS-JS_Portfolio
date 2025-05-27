@@ -49,12 +49,12 @@ p {
 
 /* Transition */
 
-a{
+a {
   transition: all 300ms ease;
 }
-button{
+button {
   transition: all 300ms ease;
-  &:hover{
+  &:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 }
@@ -281,6 +281,7 @@ button:hover {
   height: 16px;
 }
 
+/* Social Networks */
 /* Social Networks */
 ul {
   list-style: none;
@@ -1392,7 +1393,7 @@ footer .rights p {
           align-items: center;
           gap: 0 !important;
           margin-top: 0 !important;
-          & a{
+          & a {
             transition: all 300ms ease;
             &:hover {
               text-decoration: none;
